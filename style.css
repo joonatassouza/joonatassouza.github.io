@@ -1,46 +1,47 @@
 :root {
-  /* Monster-inspired Dark Theme */
-  --bg-primary: #000000; /* Preto para o fundo principal */
-  --bg-secondary: #1a1a1a; /* Um tom de cinza escuro para seções secundárias */
-  --bg-tertiary: #2a2a2a; /* Outro tom de cinza escuro */
-  --bg-card: #1e1e1e; /* Fundo de cartões */
-  --text-primary: #ffffff; /* Branco para texto principal */
-  --text-secondary: #919296; /* Prata para texto secundário */
-  --text-muted: #888886; /* Um prata mais escuro para texto esmaecido */
-  --accent-primary: #95d600; /* Verde Monster para o acento principal */
-  --accent-secondary: #8f9396; /* Um tom de prata para o acento secundário */
-  --accent-tertiary: #6acd0c; /* Um verde um pouco diferente para o acento terciário */
+  /* Tema Profissional (Escuro) */
+  --bg-primary: #121212; /* Fundo principal: cinza escuro quase preto */
+  --bg-secondary: #1e1e1e; /* Fundo secundário: cinza escuro */
+  --bg-tertiary: #2a2a2a; /* Fundo terciário: cinza médio escuro */
+  --bg-card: #1e1e1e; /* Fundo de cartões: cinza escuro */
+  --text-primary: #e0e0e0; /* Texto principal: cinza claro */
+  --text-secondary: #b0b0b0; /* Texto secundário: cinza médio */
+  --text-muted: #888888; /* Texto esmaecido: cinza mais escuro */
+  --accent-primary: #007bff; /* Azul profissional para acento principal */
+  --accent-secondary: #6c757d; /* Cinza para acento secundário */
+  --accent-tertiary: #20c997; /* Teal para acento terciário (opcional) */
   --border-color: #333333; /* Cor de borda */
-  --shadow-light: rgba(149, 214, 0, 0.1); /* Sombras baseadas no verde Monster */
-  --shadow-medium: rgba(149, 214, 0, 0.2);
-  --shadow-heavy: rgba(149, 214, 0, 0.3);
-  --gradient-primary: linear-gradient(135deg, #95d600 0%, #ccdc2a 100%); /* Gradiente de verde */
-  --gradient-secondary: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); /* Gradiente de preto/cinza */
-  --gradient-accent: linear-gradient(135deg, #95d600 0%, #30aa49 100%); /* Outro gradiente de verde */
-  --success-color: #95d600; /* Verde Monster para sucesso */
-  --warning-color: #faef55; /* Amarelo (opcional, pode ser ajustado) */
-  --error-color: #e84393; /* Rosa (opcional, pode ser ajustado) */
-  --monster-purple: #95d600; /* Pode ser removido ou alterado para uma variação de verde */
-  --monster-blue: #888886; /* Pode ser removido ou alterado para um tom de prata */
-  --monster-pink: #919296; /* Pode ser removido ou alterado para um tom de prata */
+  --shadow-light: rgba(0, 123, 255, 0.1); /* Sombras baseadas no azul */
+  --shadow-medium: rgba(0, 123, 255, 0.2);
+  --shadow-heavy: rgba(0, 123, 255, 0.3);
+  --gradient-primary: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* Gradiente de azul */
+  --gradient-secondary: linear-gradient(135deg, #1e1e1e 0%, #3a3a3a 100%); /* Gradiente de cinza */
+  --gradient-accent: linear-gradient(135deg, #20c997 0%, #17a2b8 100%); /* Gradiente de teal */
+  --success-color: #28a745; /* Verde para sucesso */
+  --warning-color: #ffc107; /* Amarelo para aviso */
+  --error-color: #dc3545; /* Vermelho para erro */
+  /* Cores Monster removidas ou redefinidas para o tema profissional */
+  --monster-purple: var(--accent-primary);
+  --monster-blue: var(--accent-secondary);
+  --monster-pink: var(--accent-tertiary);
 }
 
 [data-theme="light"] {
-  /* Para o tema claro, você pode inverter as cores ou usar um fundo branco com o verde Monster como acento */
+  /* Tema Profissional (Claro) */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #e9ecef;
   --bg-card: #ffffff;
-  --text-primary: #000000;
-  --text-secondary: #636e72;
-  --text-muted: #b2bec3;
-  --accent-primary: #95d600; /* Verde Monster */
-  --accent-secondary: #888886; /* Prata */
-  --accent-tertiary: #6acd0c; /* Outro verde */
-  --border-color: #ddd;
-  --shadow-light: rgba(149, 214, 0, 0.1);
-  --shadow-medium: rgba(149, 214, 0, 0.15);
-  --shadow-heavy: rgba(149, 214, 0, 0.25);
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --text-muted: #6c757d;
+  --accent-primary: #007bff; /* O mesmo azul profissional */
+  --accent-secondary: #6c757d;
+  --accent-tertiary: #20c997;
+  --border-color: #dee2e6;
+  --shadow-light: rgba(0, 123, 255, 0.1);
+  --shadow-medium: rgba(0, 123, 255, 0.15);
+  --shadow-heavy: rgba(0, 123, 255, 0.25);
 }
 
 * {
