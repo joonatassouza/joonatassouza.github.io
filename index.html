@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body data-theme="dark">
     <div class="background-pattern"></div>
     
     <nav class="navbar">
@@ -23,20 +23,284 @@
         </div>
         <div class="nav-controls">
           <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
           </button>
-          <button id="lang-btn" class="lang-btn">English</button>
+          <button id="lang-btn" class="lang-btn">Português</button>
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <div id="pt-version">
+      <div id="en-version">
         <header class="hero-section">
           <div class="hero-content">
             <div class="profile-image">
               <div class="profile-placeholder">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <h1 class="hero-title">Jonatas Souza</h1>
+            <p class="hero-subtitle">Senior Full-Stack Developer</p>
+            <div class="hero-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Toledo, Paraná, Brazil</span>
+            </div>
+            <div class="contact-info">
+              <a href="tel:+5545999295418" class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+55 45 9 9929 5418</span>
+              </a>
+              <a href="mailto:jonatasfelipe2@hotmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+              <a href="http://www.linkedin.com/in/joonatassouza" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+          </div>
+          <div class="section-content">
+            <p class="summary-text">
+              A Full-Stack Developer with over 10 years of experience crafting robust and scalable technology solutions. I
+              have extensive expertise across a wide array of front-end and back-end technologies, including .NET,
+              JavaScript, Angular, React (ReactJS & ReactNative), PHP, Laravel, and Node.js. My career is defined by
+              technical leadership, legacy system optimization, and the successful delivery of complex projects with a
+              focus on performance and quality. I am seeking opportunities to apply my skills to develop innovative,
+              high-impact products.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h2><i class="fas fa-code"></i> Core Competencies</h2>
+          </div>
+          <div class="section-content">
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4><i class="fas fa-laptop-code"></i> Front-End</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">ReactJS</span>
+                  <span class="skill-tag">Angular</span>
+                  <span class="skill-tag">React Native</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">Bootstrap</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-server"></i> Back-End</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">.NET</span>
+                  <span class="skill-tag">PHP</span>
+                  <span class="skill-tag">Laravel</span>
+                  <span class="skill-tag">MongoDB</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">AWS</span>
+                  <span class="skill-tag">CI/CD</span>
+                  <span class="skill-tag">Docker</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-puzzle-piece"></i> Extensions</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Chrome Extensions</span>
+                  <span class="skill-tag">Manifest V2 & V3</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-database"></i> Databases</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">MongoDB</span>
+                  <span class="skill-tag">SQL Server</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-tools"></i> Methodologies</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Selenium</span>
+                  <span class="skill-tag">Scrum</span>
+                  <span class="skill-tag">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+          </div>
+          <div class="section-content">
+            <div class="timeline">
+              <div class="job-card current">
+                <div class="company-logo">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Vengreso" />
+                </div>
+                <div class="job-content">
+                  <div class="job-header">
+                    <h3>Vice President of Technology Development</h3>
+                    <span class="company">Vengreso</span>
+                    <span class="period">Jan 2025 - Present</span>
+                    <span class="current-badge">Current</span>
+                  </div>
+                  <ul class="achievements">
+                    <li>Lead Vengreso's technology strategy and execution across front-end, back-end, DevOps, and security.</li>
+                    <li>Direct the development of enterprise-grade solutions using Angular, React, PHP, Laravel, Node.js, and MongoDB.</li>
+                    <li>Spearhead the refactoring of hundreds of thousands of lines of code to improve performance, scalability, and maintainability.</li>
+                    <li>Introduced automated testing frameworks to increase product reliability and reduce deployment times.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="job-card">
+                <div class="company-logo">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Vengreso" />
+                </div>
+                <div class="job-content">
+                  <div class="job-header">
+                    <h3>Manager of Application Development</h3>
+                    <span class="company">Vengreso</span>
+                    <span class="period">Aug 2024 - Dec 2024</span>
+                  </div>
+                  <ul class="achievements">
+                    <li>Took leadership of the department in a challenging environment and delivered the company's first enterprise-grade solution in over two years within just five months.</li>
+                    <li>Led a team revitalization effort and optimized hundreds of thousands of lines of legacy code to enhance system performance.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="job-card">
+                <div class="company-logo">
+                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Vengreso" />
+                </div>
+                <div class="job-content">
+                  <div class="job-header">
+                    <h3>Senior Software Development Engineer</h3>
+                    <span class="company">Vengreso</span>
+                    <span class="period">Apr 2024 - Aug 2024</span>
+                  </div>
+                  <ul class="achievements">
+                    <li>Managed the end-to-end migration of the FlyMSG Chrome extension from Manifest V2 to V3, rewriting thousands of lines of code to meet new security and performance standards.</li>
+                    <li>Led the development and optimization of high-performance web applications using Angular and React.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="job-card">
+                <div class="company-logo">
+                  <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="askblue" />
+                </div>
+                <div class="job-content">
+                  <div class="job-header">
+                    <h3>Senior Software Engineer</h3>
+                    <span class="company">askblue</span>
+                    <span class="period">Jul 2021 - Apr 2023</span>
+                  </div>
+                  <ul class="achievements">
+                    <li>Served as the front-end team leader, developing with ReactJS and TypeScript.</li>
+                    <li>Responsible for training junior developers, ensuring technical growth and high-quality code practices.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="job-card">
+                <div class="company-logo freelance">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="job-content">
+                  <div class="job-header">
+                    <h3>Freelance Developer</h3>
+                    <span class="company">Self-Employed</span>
+                    <span class="period">Sep 2019 - Mar 2023</span>
+                  </div>
+                  <ul class="achievements">
+                    <li>Developed mobile applications using React Native, Expo, and TypeScript.</li>
+                    <li>Created REST APIs with Node.js and .NET, and websites with ReactJS and Next.js.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="job-card">
+                <div class="company-logo">
+                  <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Inside Sistemas" />
+                </div>
+                <div class="job-content">
+                  <div class="job-header">
+                    <h3>Full-Stack Developer</h3>
+                    <span class="company">Inside Sistemas</span>
+                    <span class="period">Oct 2019 - Oct 2020</span>
+                  </div>
+                  <ul class="achievements">
+                    <li>Performed system integrations with Node.js and developed web pages with ReactJS and Angular.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+          </div>
+          <div class="section-content">
+            <div class="education-grid">
+              <div class="education-card">
+                <div class="education-icon">
+                  <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                  <h4>Postgraduate Specialization, Software Engineering</h4>
+                  <p class="institution">Metropolitan College of the State of São Paulo (FAMEESP)</p>
+                  <p class="period">May 2023 - Dec 2023</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <div class="education-content">
+                  <h4>Specialization in ReactJS, React Native, and Node.js</h4>
+                  <p class="institution">RocketSeat</p>
+                  <p class="period">Sep 2019 - Dec 2019</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-icon">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <div class="education-content">
+                  <h4>Technologist in Information Technology</h4>
+                  <p class="institution">UNIPAR - Universidade Paranaense</p>
+                  <p class="period">Jan 2013 - Dec 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="pt-version" style="display: none">
+        <header class="hero-section">
+          <div class="hero-content">
+            <div class="profile-image">
+              <div class="profile-placeholder">
+                <i class="fas fa-code"></i>
               </div>
             </div>
             <h1 class="hero-title">Jonatas Souza</h1>
@@ -52,7 +316,7 @@
               </a>
               <a href="mailto:jonatasfelipe2@hotmail.com" class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>jonatasfelipe2@hotmail.com</span>
+                <span>Email</span>
               </a>
               <a href="http://www.linkedin.com/in/joonatassouza" target="_blank" class="contact-item">
                 <i class="fab fa-linkedin"></i>
@@ -288,237 +552,6 @@
                   <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
                   <p class="institution">UNIPAR - Universidade Paranaense</p>
                   <p class="period">Jan 2013 - Dez 2015</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <div id="en-version" style="display: none">
-        <header class="hero-section">
-          <div class="hero-content">
-            <div class="profile-image">
-              <div class="profile-placeholder">
-                <i class="fas fa-user"></i>
-              </div>
-            </div>
-            <h1 class="hero-title">Jonatas Souza</h1>
-            <p class="hero-subtitle">Senior Full-Stack Developer</p>
-            <div class="hero-location">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Toledo, Paraná, Brazil</span>
-            </div>
-            <div class="contact-info">
-              <a href="tel:+5545999295418" class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+55 45 9 9929 5418</span>
-              </a>
-              <a href="mailto:jonatasfelipe2@hotmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>jonatasfelipe2@hotmail.com</span>
-              </a>
-              <a href="http://www.linkedin.com/in/joonatassouza" target="_blank" class="contact-item">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </header>
-
-        <section class="content-section">
-          <div class="section-header">
-            <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
-          </div>
-          <div class="section-content">
-            <p class="summary-text">
-              A Full-Stack Developer with over 10 years of experience crafting robust and scalable technology solutions. I
-              have extensive expertise across a wide array of front-end and back-end technologies, including .NET,
-              JavaScript, Angular, React (ReactJS & ReactNative), PHP, Laravel, and Node.js. My career is defined by
-              technical leadership, legacy system optimization, and the successful delivery of complex projects with a
-              focus on performance and quality. I am seeking opportunities to apply my skills to develop innovative,
-              high-impact products.
-            </p>
-          </div>
-        </section>
-
-        <section class="content-section">
-          <div class="section-header">
-            <h2><i class="fas fa-code"></i> Core Competencies</h2>
-          </div>
-          <div class="section-content">
-            <div class="skills-grid">
-              <div class="skill-category">
-                <h4><i class="fas fa-laptop-code"></i> Front-End</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">ReactJS</span>
-                  <span class="skill-tag">Angular</span>
-                  <span class="skill-tag">React Native</span>
-                  <span class="skill-tag">TypeScript</span>
-                  <span class="skill-tag">JavaScript</span>
-                  <span class="skill-tag">HTML5</span>
-                  <span class="skill-tag">CSS3</span>
-                  <span class="skill-tag">Bootstrap</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4><i class="fas fa-server"></i> Back-End</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Node.js</span>
-                  <span class="skill-tag">.NET</span>
-                  <span class="skill-tag">PHP</span>
-                  <span class="skill-tag">Laravel</span>
-                  <span class="skill-tag">MongoDB</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">AWS</span>
-                  <span class="skill-tag">CI/CD</span>
-                  <span class="skill-tag">Docker</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4><i class="fas fa-puzzle-piece"></i> Extensions</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Chrome Extensions</span>
-                  <span class="skill-tag">Manifest V2 & V3</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4><i class="fas fa-database"></i> Databases</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">MongoDB</span>
-                  <span class="skill-tag">SQL Server</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4><i class="fas fa-tools"></i> Methodologies</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Selenium</span>
-                  <span class="skill-tag">Scrum</span>
-                  <span class="skill-tag">Git</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section">
-          <div class="section-header">
-            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-          </div>
-          <div class="section-content">
-            <div class="timeline">
-              <div class="job-card current">
-                <div class="company-logo">
-                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Vengreso" />
-                </div>
-                <div class="job-content">
-                  <div class="job-header">
-                    <h3>Vice President of Technology Development</h3>
-                    <span class="company">Vengreso</span>
-                    <span class="period">Jan 2025 - Present</span>
-                    <span class="current-badge">Current</span>
-                  </div>
-                  <ul class="achievements">
-                    <li>Lead Vengreso's technology strategy and execution across front-end, back-end, DevOps, and security.</li>
-                    <li>Direct the development of enterprise-grade solutions using Angular, React, PHP, Laravel, Node.js, and MongoDB.</li>
-                    <li>Spearhead the refactoring of hundreds of thousands of lines of code to improve performance, scalability, and maintainability.</li>
-                    <li>Introduced automated testing frameworks to increase product reliability and reduce deployment times.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="job-card">
-                <div class="company-logo">
-                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Vengreso" />
-                </div>
-                <div class="job-content">
-                  <div class="job-header">
-                    <h3>Manager of Application Development</h3>
-                    <span class="company">Vengreso</span>
-                    <span class="period">Aug 2024 - Dec 2024</span>
-                  </div>
-                  <ul class="achievements">
-                    <li>Took leadership of the department in a challenging environment and delivered the company's first enterprise-grade solution in over two years within just five months.</li>
-                    <li>Led a team revitalization effort and optimized hundreds of thousands of lines of legacy code to enhance system performance.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="job-card">
-                <div class="company-logo">
-                  <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Vengreso" />
-                </div>
-                <div class="job-content">
-                  <div class="job-header">
-                    <h3>Senior Software Development Engineer</h3>
-                    <span class="company">Vengreso</span>
-                    <span class="period">Apr 2024 - Aug 2024</span>
-                  </div>
-                  <ul class="achievements">
-                    <li>Managed the end-to-end migration of the FlyMSG Chrome extension from Manifest V2 to V3, rewriting thousands of lines of code to meet new security and performance standards.</li>
-                    <li>Led the development and optimization of high-performance web applications using Angular and React.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="job-card">
-                <div class="company-logo">
-                  <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="askblue" />
-                </div>
-                <div class="job-content">
-                  <div class="job-header">
-                    <h3>Senior Software Engineer</h3>
-                    <span class="company">askblue</span>
-                    <span class="period">Jul 2021 - Apr 2023</span>
-                  </div>
-                  <ul class="achievements">
-                    <li>Served as the front-end team leader, developing with ReactJS and TypeScript.</li>
-                    <li>Responsible for training junior developers, ensuring technical growth and high-quality code practices.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section">
-          <div class="section-header">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-          </div>
-          <div class="section-content">
-            <div class="education-grid">
-              <div class="education-card">
-                <div class="education-icon">
-                  <i class="fas fa-university"></i>
-                </div>
-                <div class="education-content">
-                  <h4>Postgraduate Specialization, Software Engineering</h4>
-                  <p class="institution">Metropolitan College of the State of São Paulo (FAMEESP)</p>
-                  <p class="period">May 2023 - Dec 2023</p>
-                </div>
-              </div>
-              <div class="education-card">
-                <div class="education-icon">
-                  <i class="fas fa-rocket"></i>
-                </div>
-                <div class="education-content">
-                  <h4>Specialization in ReactJS, React Native, and Node.js</h4>
-                  <p class="institution">RocketSeat</p>
-                  <p class="period">Sep 2019 - Dec 2019</p>
-                </div>
-              </div>
-              <div class="education-card">
-                <div class="education-icon">
-                  <i class="fas fa-laptop"></i>
-                </div>
-                <div class="education-content">
-                  <h4>Technologist in Information Technology</h4>
-                  <p class="institution">UNIPAR - Universidade Paranaense</p>
-                  <p class="period">Jan 2013 - Dec 2015</p>
                 </div>
               </div>
             </div>

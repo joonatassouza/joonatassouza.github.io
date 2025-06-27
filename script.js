@@ -5,21 +5,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const enVersion = document.getElementById("en-version");
   const body = document.body;
 
+  // Set English as default and dark theme as primary
+  enVersion.style.display = "block";
+  ptVersion.style.display = "none";
+  langBtn.textContent = "Português";
+
   // Language switching functionality
   langBtn.addEventListener("click", () => {
-    if (ptVersion.style.display === "none") {
-      ptVersion.style.display = "block";
-      enVersion.style.display = "none";
-      langBtn.textContent = "English";
-    } else {
-      ptVersion.style.display = "none";
+    if (enVersion.style.display === "none") {
       enVersion.style.display = "block";
+      ptVersion.style.display = "none";
       langBtn.textContent = "Português";
+    } else {
+      enVersion.style.display = "none";
+      ptVersion.style.display = "block";
+      langBtn.textContent = "English";
     }
   });
 
-  // Theme switching functionality
-  const currentTheme = localStorage.getItem("theme") || "light";
+  // Theme switching functionality - Dark as primary
+  const currentTheme = localStorage.getItem("theme") || "dark";
   body.setAttribute("data-theme", currentTheme);
   updateThemeIcon(currentTheme);
 
@@ -96,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
-  // Add typing effect to hero title (optional enhancement)
+  // Enhanced typing effect for hero title
   const heroTitle = document.querySelector('.hero-title');
   if (heroTitle) {
     const text = heroTitle.textContent;
@@ -107,15 +112,19 @@ document.addEventListener("DOMContentLoaded", () => {
       if (i < text.length) {
         heroTitle.textContent += text.charAt(i);
         i++;
-        setTimeout(typeWriter, 100);
+        setTimeout(typeWriter, 80);
+      } else {
+        // Add cursor blink effect
+        heroTitle.style.borderRight = '3px solid var(--accent-primary)';
+        heroTitle.style.animation = 'blink 1s infinite';
       }
     };
     
     // Start typing effect after a short delay
-    setTimeout(typeWriter, 500);
+    setTimeout(typeWriter, 800);
   }
 
-  // Add particle effect to background (subtle enhancement)
+  // Enhanced particle effect with Monster theme colors
   createParticles();
 
   function createParticles() {
@@ -133,37 +142,54 @@ document.addEventListener("DOMContentLoaded", () => {
     
     document.body.appendChild(particlesContainer);
 
-    for (let i = 0; i < 50; i++) {
+    const colors = ['#6c5ce7', '#a29bfe', '#fd79a8', '#74b9ff'];
+
+    for (let i = 0; i < 60; i++) {
       const particle = document.createElement('div');
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const size = Math.random() * 4 + 2;
+      
       particle.style.cssText = `
         position: absolute;
-        width: 2px;
-        height: 2px;
-        background: var(--accent-primary);
+        width: ${size}px;
+        height: ${size}px;
+        background: ${color};
         border-radius: 50%;
-        opacity: 0.3;
-        animation: float ${Math.random() * 10 + 10}s infinite linear;
+        opacity: ${Math.random() * 0.5 + 0.2};
+        animation: float ${Math.random() * 15 + 15}s infinite linear;
         left: ${Math.random() * 100}%;
         top: ${Math.random() * 100}%;
+        box-shadow: 0 0 10px ${color};
       `;
       particlesContainer.appendChild(particle);
     }
 
-    // Add CSS animation for particles
+    // Add CSS animations
     const style = document.createElement('style');
     style.textContent = `
       @keyframes float {
         0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
-        10% { opacity: 0.3; }
-        90% { opacity: 0.3; }
+        10% { opacity: 0.8; }
+        90% { opacity: 0.8; }
         100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+      }
+      
+      @keyframes blink {
+        0%, 50% { border-color: var(--accent-primary); }
+        51%, 100% { border-color: transparent; }
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
       }
     `;
     document.head.appendChild(style);
   }
 
-  // Add click effect to buttons
-  document.querySelectorAll('button, .contact-item, .skill-tag').forEach(element => {
+  // Enhanced click effect with Monster theme
+  document.querySelectorAll('button, .contact-item, .skill-tag, .job-card, .education-card').forEach(element => {
     element.addEventListener('click', function(e) {
       const ripple = document.createElement('span');
       const rect = this.getBoundingClientRect();
@@ -177,11 +203,12 @@ document.addEventListener("DOMContentLoaded", () => {
         height: ${size}px;
         left: ${x}px;
         top: ${y}px;
-        background: rgba(255, 255, 255, 0.3);
+        background: radial-gradient(circle, rgba(108, 92, 231, 0.4) 0%, transparent 70%);
         border-radius: 50%;
         transform: scale(0);
-        animation: ripple 0.6s ease-out;
+        animation: ripple 0.8s ease-out;
         pointer-events: none;
+        z-index: 1000;
       `;
       
       this.style.position = 'relative';
@@ -190,40 +217,111 @@ document.addEventListener("DOMContentLoaded", () => {
       
       setTimeout(() => {
         ripple.remove();
-      }, 600);
+      }, 800);
     });
   });
 
-  // Add ripple animation
+  // Add enhanced ripple animation
   const rippleStyle = document.createElement('style');
   rippleStyle.textContent = `
     @keyframes ripple {
       to {
-        transform: scale(2);
+        transform: scale(2.5);
         opacity: 0;
       }
     }
   `;
   document.head.appendChild(rippleStyle);
 
-  // Add loading animation
+  // Add loading animation with Monster theme
   window.addEventListener('load', () => {
     document.body.classList.add('loaded');
+    
+    // Add welcome animation
+    setTimeout(() => {
+      const welcomeText = document.createElement('div');
+      welcomeText.innerHTML = '🚀 Welcome to Monster-Style Portfolio';
+      welcomeText.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--gradient-primary);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        z-index: 10000;
+        animation: welcomeSlide 3s ease-in-out forwards;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 10px 40px var(--shadow-heavy);
+      `;
+      
+      document.body.appendChild(welcomeText);
+      
+      setTimeout(() => {
+        welcomeText.remove();
+      }, 3000);
+    }, 1000);
   });
 
-  // Add CSS for loading state
+  // Add CSS for loading and welcome animations
   const loadingStyle = document.createElement('style');
   loadingStyle.textContent = `
     body:not(.loaded) .container {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     
     body.loaded .container {
       opacity: 1;
       transform: translateY(0);
-      transition: opacity 0.8s ease, transform 0.8s ease;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    @keyframes welcomeSlide {
+      0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+      20% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+      80% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
     }
   `;
   document.head.appendChild(loadingStyle);
+
+  // Add skill tag hover effects
+  document.querySelectorAll('.skill-tag').forEach(tag => {
+    tag.addEventListener('mouseenter', function() {
+      this.style.animation = 'pulse 0.6s ease-in-out';
+    });
+    
+    tag.addEventListener('animationend', function() {
+      this.style.animation = '';
+    });
+  });
+
+  // Add parallax effect to hero section
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      heroSection.style.transform = `translateY(${scrolled * 0.1}px)`;
+    }
+  });
+
+  // Add dynamic gradient animation to brand icon
+  const brandIcon = document.querySelector('.brand-icon');
+  if (brandIcon) {
+    setInterval(() => {
+      const gradients = [
+        'linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)',
+        'linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%)',
+        'linear-gradient(135deg, #00b894 0%, #00cec9 100%)',
+        'linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)'
+      ];
+      const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
+      brandIcon.style.background = randomGradient;
+    }, 3000);
+  }
 });
