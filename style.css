@@ -1,46 +1,46 @@
 :root {
-  /* Monster-inspired Dark Theme (Primary) */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
-  --bg-tertiary: #2a2a2a;
-  --bg-card: #1e1e1e;
-  --text-primary: #ffffff;
-  --text-secondary: #b3b3b3;
-  --text-muted: #808080;
-  --accent-primary: #6c5ce7;
-  --accent-secondary: #a29bfe;
-  --accent-tertiary: #fd79a8;
-  --border-color: #333333;
-  --shadow-light: rgba(108, 92, 231, 0.1);
-  --shadow-medium: rgba(108, 92, 231, 0.2);
-  --shadow-heavy: rgba(108, 92, 231, 0.3);
-  --gradient-primary: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
-  --gradient-secondary: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
-  --gradient-accent: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
-  --success-color: #00b894;
-  --warning-color: #fdcb6e;
-  --error-color: #e84393;
-  --monster-purple: #6c5ce7;
-  --monster-blue: #74b9ff;
-  --monster-pink: #fd79a8;
+  /* Monster-inspired Dark Theme */
+  --bg-primary: #000000; /* Preto para o fundo principal */
+  --bg-secondary: #1a1a1a; /* Um tom de cinza escuro para seções secundárias */
+  --bg-tertiary: #2a2a2a; /* Outro tom de cinza escuro */
+  --bg-card: #1e1e1e; /* Fundo de cartões */
+  --text-primary: #ffffff; /* Branco para texto principal */
+  --text-secondary: #919296; /* Prata para texto secundário */
+  --text-muted: #888886; /* Um prata mais escuro para texto esmaecido */
+  --accent-primary: #95d600; /* Verde Monster para o acento principal */
+  --accent-secondary: #8f9396; /* Um tom de prata para o acento secundário */
+  --accent-tertiary: #6acd0c; /* Um verde um pouco diferente para o acento terciário */
+  --border-color: #333333; /* Cor de borda */
+  --shadow-light: rgba(149, 214, 0, 0.1); /* Sombras baseadas no verde Monster */
+  --shadow-medium: rgba(149, 214, 0, 0.2);
+  --shadow-heavy: rgba(149, 214, 0, 0.3);
+  --gradient-primary: linear-gradient(135deg, #95d600 0%, #ccdc2a 100%); /* Gradiente de verde */
+  --gradient-secondary: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); /* Gradiente de preto/cinza */
+  --gradient-accent: linear-gradient(135deg, #95d600 0%, #30aa49 100%); /* Outro gradiente de verde */
+  --success-color: #95d600; /* Verde Monster para sucesso */
+  --warning-color: #faef55; /* Amarelo (opcional, pode ser ajustado) */
+  --error-color: #e84393; /* Rosa (opcional, pode ser ajustado) */
+  --monster-purple: #95d600; /* Pode ser removido ou alterado para uma variação de verde */
+  --monster-blue: #888886; /* Pode ser removido ou alterado para um tom de prata */
+  --monster-pink: #919296; /* Pode ser removido ou alterado para um tom de prata */
 }
 
 [data-theme="light"] {
-  /* Light theme colors */
+  /* Para o tema claro, você pode inverter as cores ou usar um fundo branco com o verde Monster como acento */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #e9ecef;
   --bg-card: #ffffff;
-  --text-primary: #2d3436;
+  --text-primary: #000000;
   --text-secondary: #636e72;
   --text-muted: #b2bec3;
-  --accent-primary: #6c5ce7;
-  --accent-secondary: #a29bfe;
-  --accent-tertiary: #fd79a8;
+  --accent-primary: #95d600; /* Verde Monster */
+  --accent-secondary: #888886; /* Prata */
+  --accent-tertiary: #6acd0c; /* Outro verde */
   --border-color: #ddd;
-  --shadow-light: rgba(108, 92, 231, 0.1);
-  --shadow-medium: rgba(108, 92, 231, 0.15);
-  --shadow-heavy: rgba(108, 92, 231, 0.25);
+  --shadow-light: rgba(149, 214, 0, 0.1);
+  --shadow-medium: rgba(149, 214, 0, 0.15);
+  --shadow-heavy: rgba(149, 214, 0, 0.25);
 }
 
 * {
@@ -54,7 +54,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: "Fira Code", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, monospace;
   line-height: 1.6;
   color: var(--text-primary);
   background: var(--bg-primary);
@@ -68,8 +68,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
+  background: radial-gradient(circle at 20% 50%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(253, 121, 168, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 80%, rgba(116, 185, 255, 0.1) 0%, transparent 50%);
   z-index: -1;
@@ -138,7 +137,8 @@ body {
   gap: 1rem;
 }
 
-.theme-btn, .lang-btn {
+.theme-btn,
+.lang-btn {
   padding: 0.75rem 1.25rem;
   border: 1px solid var(--border-color);
   background: var(--bg-secondary);
@@ -155,7 +155,8 @@ body {
   letter-spacing: 0.5px;
 }
 
-.theme-btn:hover, .lang-btn:hover {
+.theme-btn:hover,
+.lang-btn:hover {
   background: var(--accent-primary);
   color: white;
   transform: translateY(-2px);
@@ -230,6 +231,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -2px;
+  display: inline-block;
 }
 
 .hero-subtitle {
@@ -305,7 +307,7 @@ body {
 }
 
 .content-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -372,7 +374,7 @@ body {
 }
 
 .skill-category::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -435,7 +437,7 @@ body {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 60px;
   top: 0;
@@ -483,12 +485,13 @@ body {
   z-index: 1;
   border: 2px solid var(--border-color);
   box-shadow: 0 5px 20px var(--shadow-light);
+  padding: 5px;
 }
 
 .company-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .company-logo.freelance {
@@ -560,7 +563,7 @@ body {
 }
 
 .achievements li::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   left: 0;
   color: var(--accent-primary);
@@ -588,7 +591,7 @@ body {
 }
 
 .education-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -655,7 +658,7 @@ body {
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -715,63 +718,63 @@ body {
   .nav-container {
     padding: 1rem;
   }
-  
+
   .brand-text {
     display: none;
   }
-  
+
   .container {
     padding: 5rem 1rem 1rem;
   }
-  
+
   .hero-title {
     font-size: 2.8rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.4rem;
   }
-  
+
   .contact-info {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .content-section {
     padding: 2rem;
   }
-  
+
   .section-header h2 {
     font-size: 2rem;
   }
-  
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .timeline::before {
     left: 35px;
   }
-  
+
   .job-card {
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
   }
-  
+
   .company-logo {
     width: 60px;
     height: 60px;
   }
-  
+
   .education-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .education-card {
     padding: 2rem;
   }
-  
+
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -782,18 +785,18 @@ body {
   .hero-title {
     font-size: 2.2rem;
   }
-  
+
   .profile-placeholder {
     width: 120px;
     height: 120px;
     font-size: 3rem;
   }
-  
+
   .contact-item {
     padding: 0.75rem 1.5rem;
     font-size: 0.8rem;
   }
-  
+
   .job-card:hover {
     transform: none;
   }
@@ -807,10 +810,16 @@ body {
   .content-section {
     animation: fadeInUp 0.8s ease-out;
   }
-  
-  .job-card:nth-child(2) { animation-delay: 0.1s; }
-  .job-card:nth-child(3) { animation-delay: 0.2s; }
-  .job-card:nth-child(4) { animation-delay: 0.3s; }
+
+  .job-card:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .job-card:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .job-card:nth-child(4) {
+    animation-delay: 0.3s;
+  }
 }
 
 @keyframes fadeInUp {
@@ -832,12 +841,12 @@ body {
   .footer {
     display: none;
   }
-  
+
   .container {
     padding: 0;
     max-width: none;
   }
-  
+
   .content-section {
     box-shadow: none;
     border: 1px solid #ddd;
