@@ -1,22 +1,22 @@
 ## Professional Summary
 
-Senior Full Stack Engineer with 10+ years of experience across web applications, APIs, and browser extensions. Hands-on VP of Technology Development at Vengreso, combining implementation and architecture with technical leadership. Core strengths in TypeScript, React, Angular, Node.js, PHP/Laravel, and Chromium extensions, with delivery experience spanning Manifest V3 migration, automated quality gates, AWS infrastructure modernization, and custom AI-agent workflows. Recent work includes migrating a PHP/Laravel system to Node.js with Fastify. Seeking a hands-on Senior Engineer role with a remote team.
+Senior Full Stack Engineer with 10+ years building web applications, APIs, and browser extensions. Hands-on technology leader working with TypeScript, React, Node.js, PHP/Laravel, and AWS. Combines implementation and architecture with legacy modernization, automated quality gates, and AI-agent engineering workflows. Helped bring a .NET-to-Node.js serverless migration into production and reduced open and pending tasks from 460 to 190 in two months using customized AI agents.
 
 ## Technical Skills
 
 **Frontend & extensions:** TypeScript, JavaScript, React, Angular, Chrome/Chromium extensions, Manifest V3
 
-**Backend & data:** Node.js, Fastify, PHP, Laravel, REST APIs, MongoDB, PostgreSQL, SQL Server, Redis
+**Backend:** Node.js, PHP/Laravel, Fastify, REST APIs; familiarity with NestJS and Express
 
-**AWS:** Lambda, SQS, EventBridge, Step Functions, DynamoDB, CloudWatch, Elastic Beanstalk, EC2, S3, SES
+**Data:** PostgreSQL, MongoDB, SQL Server, Redis, DynamoDB
 
-**Quality & delivery:** Jest (2+ years of active use), automated testing, CI/CD, quality gates, legacy refactoring
+**Cloud:** AWS Lambda, SQS, EventBridge, Step Functions, Elastic Beanstalk, CloudWatch; Google Cloud Platform (GCP)
 
-**AI-assisted engineering:** Claude, Codex, Model Context Protocol (MCP), custom skills, human-led multi-agent orchestration
+**Quality & delivery:** Jest (2+ years), automated testing, GitHub Actions, CI/CD quality gates, legacy refactoring
 
-**Earlier experience:** .NET/C#, React Native, Expo, Xamarin, Selenium
+**AI-assisted engineering:** Claude, Codex, Model Context Protocol (MCP), custom skills, multi-agent orchestration
 
-**Additional familiarity:** Express, Next.js; limited practical use of Kafka; basic knowledge of Datadog
+**Earlier experience:** C#/.NET, Next.js, React Native, Xamarin, Selenium
 
 ## Professional Experience
 
@@ -28,7 +28,7 @@ Vengreso | Brazil | Jan 2025 - Present
 - Built an internal task-management system connecting Claude and Codex agents through MCP, with custom skills to orchestrate engineering tasks.
 - **Reduced open and pending tasks from 460 to 190 in two months** using customized AI agents.
 - Implemented automated tests and CI/CD gates across PHP/Laravel, Node.js, Angular, and React projects.
-- Modernized infrastructure and deployment architecture, moving from Jenkins and manual deployments to AWS Elastic Beanstalk and automated CI/CD pipelines.
+- Modernized deployment architecture, moving from Jenkins and manual deployments to AWS Elastic Beanstalk and automated CI/CD pipelines.
 
 ### Manager of Application Development
 
@@ -48,16 +48,16 @@ Vengreso | Brazil | Apr 2024 - Aug 2024
 
 Todos Empreendimentos LTDA | Remote | May 2023 - Sep 2024
 
-- Helped bring a legacy .NET-to-Node.js migration into production on AWS serverless, contributing to the initial scope and architecture.
-- Coordinated the squad responsible for financial modules, membership-card integrations, and subscriptions, working across engineering and product teams.
-- Developed the payment module and its integrations in an environment using Lambda, SQS, EventBridge, Step Functions, DynamoDB, and CloudWatch, with limited Kafka use.
+- **Helped bring a legacy .NET-to-Node.js migration into production on AWS serverless**, participating in the initial scope and architecture design.
+- Was responsible for the squad covering financial modules, card integrations, and subscriptions, working with frontend, backend, product, and other integration teams.
+- Developed the payment module and integrations with other modules, with limited Kafka use; also used NestJS during part of the project.
+- Worked in a microservices architecture using AWS Lambda, SQS, EventBridge, Step Functions, and DynamoDB, in an environment with CloudWatch.
 
 ### Senior Software Engineer
 
 askblue | Lisbon, Portugal | Jul 2021 - Apr 2023
 
-- Developed React and TypeScript frontend applications and served as frontend technical lead.
-- Mentored junior developers and other engineers on development practices and code quality.
+- Developed React and TypeScript applications, served as frontend technical lead, and mentored developers on development practices and code quality.
 
 ### Freelance Developer
 
@@ -82,8 +82,7 @@ Easy Communication Technology | Miami, United States | Apr 2018 - Aug 2019
 
 Datacoper Software Ltda | Cascavel, Brazil | Jun 2016 - Nov 2018
 
-- Developed .NET Framework and Xamarin applications and implemented automated tests with Selenium.
-- Published and maintained mobile apps on Google Play and the Apple App Store.
+- Developed .NET Framework and Xamarin applications, implemented Selenium tests, and published apps on Google Play and the Apple App Store.
 
 ### Junior C# Developer
 
@@ -109,4 +108,4 @@ Rocketseat | Sep - Dec 2019
 
 ## Languages
 
-English: C2 (self-reported) | Portuguese: Native
+English: C2 | Portuguese: Native

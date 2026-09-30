@@ -1,22 +1,22 @@
 ## Resumo Profissional
 
-Engenheiro de Software Full Stack Sênior com mais de 10 anos de experiência em aplicações web, APIs e extensões de navegador. Atual VP de Desenvolvimento de Tecnologia na Vengreso, com atuação direta em programação, arquitetura e liderança técnica. Experiência em TypeScript, React, Angular, Node.js, PHP/Laravel e extensões Chromium, incluindo migração para Manifest V3, automação de testes e entregas, modernização de infraestrutura AWS e fluxos de trabalho com agentes de IA. O trabalho recente inclui a migração de um sistema PHP/Laravel para Node.js com Fastify. Busco uma oportunidade como engenheiro sênior, com atuação direta no desenvolvimento e trabalho remoto.
+Engenheiro de Software Full Stack Sênior com mais de 10 anos desenvolvendo aplicações web, APIs e extensões de navegador. Líder técnico com atuação direta em TypeScript, React, Node.js, PHP/Laravel e AWS. Combino programação e arquitetura com modernização de legados, testes automatizados e fluxos de engenharia com agentes de IA. Contribuí para colocar em produção uma migração de .NET para Node.js serverless e reduzi tarefas abertas e pendentes de 460 para 190 em dois meses com agentes customizados.
 
 ## Conhecimentos Técnicos
 
 **Frontend e extensões:** TypeScript, JavaScript, React, Angular, extensões Chrome/Chromium, Manifest V3
 
-**Backend e dados:** Node.js, Fastify, PHP, Laravel, APIs REST, MongoDB, PostgreSQL, SQL Server, Redis
+**Backend:** Node.js, PHP/Laravel, Fastify, APIs REST; familiaridade com NestJS e Express
 
-**AWS:** Lambda, SQS, EventBridge, Step Functions, DynamoDB, CloudWatch, Elastic Beanstalk, EC2, S3, SES
+**Dados:** PostgreSQL, MongoDB, SQL Server, Redis, DynamoDB
 
-**Qualidade e entrega:** Jest (mais de 2 anos de uso ativo), testes automatizados, CI/CD, controles de qualidade, refatoração de sistemas legados
+**Cloud:** AWS Lambda, SQS, EventBridge, Step Functions, Elastic Beanstalk, CloudWatch; Google Cloud Platform (GCP)
 
-**Engenharia com IA:** Claude, Codex, Model Context Protocol (MCP), skills próprias, orquestração de agentes com supervisão humana
+**Qualidade e entrega:** Jest (2+ anos), testes automatizados, GitHub Actions, controles de qualidade no CI/CD, refatoração de legados
 
-**Experiência anterior:** .NET/C#, React Native, Expo, Xamarin, Selenium
+**Engenharia com IA:** Claude, Codex, Model Context Protocol (MCP), skills próprias, orquestração de agentes
 
-**Conhecimentos adicionais:** Familiaridade com Express e Next.js; uso pontual de Kafka; conhecimentos básicos de Datadog
+**Experiência anterior:** C#/.NET, Next.js, React Native, Xamarin, Selenium
 
 ## Experiência Profissional
 
@@ -24,11 +24,11 @@ Engenheiro de Software Full Stack Sênior com mais de 10 anos de experiência em
 
 Vengreso | Brasil | Jan 2025 - Atual
 
-- Atuo diretamente no desenvolvimento e na entrega técnica do FlyMSG, com reporte ao CEO; liderei dois desenvolvedores e um profissional de DevOps.
+- Atuo diretamente no desenvolvimento e na entrega técnica do FlyMSG, com reporte ao CEO; anteriormente liderei dois desenvolvedores e um profissional de DevOps.
 - Criei um sistema interno de gestão de tarefas conectado a agentes Claude e Codex via MCP, com skills próprias para orquestrar atividades de engenharia.
 - **Reduzi as tarefas abertas e pendentes de 460 para 190 em dois meses**, utilizando agentes de IA customizados.
 - Implementei testes automatizados e controles de qualidade no CI/CD dos projetos PHP/Laravel, Node.js, Angular e React.
-- Modernizei a infraestrutura e a arquitetura de implantação, migrando de Jenkins e deploys manuais para AWS Elastic Beanstalk e pipelines automatizados de CI/CD.
+- Modernizei a arquitetura de implantação, migrando de Jenkins e deploys manuais para AWS Elastic Beanstalk e pipelines automatizados de CI/CD.
 
 ### Gerente de Desenvolvimento de Aplicações
 
@@ -48,16 +48,16 @@ Vengreso | Brasil | Abr 2024 - Ago 2024
 
 Todos Empreendimentos LTDA | Remoto | Mai 2023 - Set 2024
 
-- Contribuí para colocar em produção a migração de um sistema legado .NET para Node.js em arquitetura serverless AWS, participando do escopo inicial e das decisões de arquitetura.
-- Coordenei o squad responsável pelos módulos financeiros, integração de carteirinhas e assinaturas, trabalhando com equipes de engenharia e produto.
-- Desenvolvi o módulo de pagamentos e suas integrações em um ambiente com Lambda, SQS, EventBridge, Step Functions, DynamoDB e CloudWatch, com uso pontual de Kafka.
+- **Contribuí para colocar em produção a migração de um sistema legado .NET para Node.js em arquitetura serverless AWS**, participando do escopo inicial e das decisões de arquitetura.
+- Fiquei responsável pelo squad dos módulos financeiros, integração de carteirinhas e assinaturas, articulando frontend, backend, produto e integrações com outras equipes.
+- Desenvolvi o módulo de pagamentos e integrações com outros submódulos, com uso pontual de Kafka; também utilizei NestJS em parte do projeto.
+- Atuei em arquitetura de microsserviços com AWS Lambda, SQS, EventBridge, Step Functions e DynamoDB, em ambiente com CloudWatch.
 
 ### Engenheiro de Software Sênior
 
 askblue | Lisboa, Portugal | Jul 2021 - Abr 2023
 
-- Desenvolvi aplicações frontend com React e TypeScript e atuei como líder técnico de frontend.
-- Orientei desenvolvedores juniores e outros engenheiros em boas práticas de desenvolvimento e qualidade de código.
+- Desenvolvi aplicações React e TypeScript, atuei como líder técnico de frontend e orientei desenvolvedores em boas práticas e qualidade de código.
 
 ### Desenvolvedor Freelancer
 
@@ -82,8 +82,7 @@ Easy Communication Technology | Miami, Estados Unidos | Abr 2018 - Ago 2019
 
 Datacoper Software Ltda | Cascavel, Brasil | Jun 2016 - Nov 2018
 
-- Desenvolvi aplicações com .NET Framework e Xamarin e implementei testes automatizados com Selenium.
-- Publiquei e mantive aplicativos no Google Play e na Apple App Store.
+- Desenvolvi aplicações .NET Framework e Xamarin, implementei testes com Selenium e publiquei aplicativos no Google Play e na Apple App Store.
 
 ### Desenvolvedor C# Júnior
 
@@ -109,4 +108,4 @@ Rocketseat | Set - Dez 2019
 
 ## Idiomas
 
-Inglês: C2 (autodeclarado) | Português: Nativo
+Inglês: C2 | Português: Nativo
